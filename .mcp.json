@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "appium-mcp": {
+      "command": "npx",
+      "args": ["appium-mcp@latest"],
+      "env": {
+        "CAPABILITIES_CONFIG": "./wdio/src/utils/capabilities.ts"
+      }
+    }
+  }
+}
+

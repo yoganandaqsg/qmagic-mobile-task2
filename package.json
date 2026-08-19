@@ -1,0 +1,35 @@
+{
+  "name": "mobile-automation-framework",
+  "version": "1.0.0",
+  "description": "Generic mobile automation framework using Cucumber, Playwright, and WebdriverIO remote() with Appium.",
+  "main": "cucumber.js",
+  "scripts": {
+    "test": "cross-env ENVIRONMENT=local cucumber-js --config cucumber.js",
+    "test:tags": "cross-env ENVIRONMENT=local cucumber-js --config cucumber.js",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.58.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/json2csv": "^5.0.7",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.10.2",
+    "appium": "^3.5.2",
+    "appium-uiautomator2-driver": "^3.9.2",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.49.1",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "webdriverio": "^9.29.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "path": "^0.12.7"
+  }
+}
