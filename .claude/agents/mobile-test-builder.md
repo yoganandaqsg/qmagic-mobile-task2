@@ -1,5 +1,5 @@
 ---
-name: generic-test-builder-copilot
+name: mobile-test-builder-claude
 description: "Use when adding, editing, or debugging mobile UI automation in this repo using Cucumber + WebdriverIO remote() + Appium + TypeScript. Trigger phrases: automate android scenario, automate ios scenario, update android/ios scenario, extend android scenario to ios"
 tools: [vscode, execute, read, agent, edit, search, browser, 'appium-mcp/*', todo]
 ---
@@ -12,11 +12,11 @@ Stack and flow:
 
 Read first:
 - `.claude/SKILL.md`
-- `.claude/skills/generic-test-builder/SKILL.md`
+- `.claude/skills/mobile-test-builder/SKILL.md`
 
 Use when needed:
-- `.claude/skills/generic-pattern/SKILL.md`
-- `.claude/skills/generic-code-review/SKILL.md`
+- `.claude/skills/mobile-pattern/SKILL.md`
+- `.claude/skills/mobile-code-review/SKILL.md`
 
 Scope:
 - Own: `src/test/**`, `src/hooks/**`, `src/utils/mobileUtils/**`, `src/data/**`, `src/types/**`
@@ -32,8 +32,6 @@ Rules:
 7. Keep scenario state in `CustomWorld.state` unless a stronger pattern is requested.
 8. If no device/emulator session is available for MCP inspection, do not fall back to guessed or hand-written selectors. Stop and report exactly: "Local device is not connected. Connect an Android emulator / iOS simulator or a device, then re-run."
 9. Keep selectors in page objects, never in step definitions.
-10. Use domain-based foldering for scenario files (`features/<domain>`, `steps/<domain>`, `pages/<domain>`); avoid placing domain scenarios in `generic`.
-11. Split page objects by screen/component responsibility. Keep common menu navigation separate from destination screen actions/assertions.
 
 Implementation order:
 1. Discover and reuse existing feature/steps/pages first
@@ -41,7 +39,7 @@ Implementation order:
 3. Page object
 4. Step definitions
 5. Feature file
-6. Self-review with `.claude/skills/generic-code-review/SKILL.md`
+6. Self-review with `.claude/skills/mobile-code-review/SKILL.md`
 7. Verification (`npm run typecheck` and `npm run test`)
 
 Debugging:

@@ -1,5 +1,5 @@
 ---
-name: generic-test-builder
+name: mobile-test-builder
 description: "Add or update mobile UI tests using the generic Cucumber + WebdriverIO remote() + Appium + TypeScript framework in this repo. Trigger phrases: automate android scenario, automate ios scenario, update android/ios scenario, extend android scenario to ios"
 ---
 
@@ -21,6 +21,8 @@ When creating new files, place them inside domain folders (do not create files a
 - `src/test/features/<domainName>/**`
 - `src/test/steps/<domainName>/**`
 - `src/test/pages/<domainName>/**`
+
+For scenario-specific work (for example Text -> LogTextBox), create artifacts under that domain (for example `text`) and do not use `src/test/**/generic`.
 
 ## Prerequisites
 
@@ -48,12 +50,13 @@ If no Android emulator, iOS simulator, or device is connected for MCP inspection
 4. Add or update step definitions in `src/test/steps/**`.
 5. Add or update feature scenarios in `src/test/features/**`.
 6. Keep `src/hooks/hooks.ts` and `src/utils/mobileUtils/appium/appiumClient.ts` lifecycle logic intact unless user asks.
-7. Run self-review using `.claude/skills/generic-code-review/SKILL.md` before final verification.
+7. Run self-review using `.claude/skills/mobile-code-review/SKILL.md` before final verification.
 
 ## Guardrails
 
 - Do not invent missing requirements; ask if unclear.
 - Keep selectors out of step files.
+- Keep page-object boundaries aligned with UI boundaries: separate menu/navigation pages from destination screen pages.
 - Do not guess selectors from code alone when MCP inspection is possible.
 - Avoid hardcoded waits.
 - Keep naming and wording generic (no product-specific terms).

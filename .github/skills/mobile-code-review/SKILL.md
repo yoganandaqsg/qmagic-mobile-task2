@@ -1,5 +1,5 @@
 ---
-name: generic-code-review
+name: mobile-code-review
 description: Review mobile automation changes for correctness and framework consistency in this generic Cucumber + WebdriverIO + Appium project.
 ---
 

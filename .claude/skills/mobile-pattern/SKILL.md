@@ -1,5 +1,5 @@
 ---
-name: generic-pattern
+name: mobile-pattern
 description: Pattern reference for this generic mobile automation framework using Cucumber + WebdriverIO remote() + Appium.
 ---
 

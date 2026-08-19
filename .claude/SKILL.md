@@ -4,10 +4,10 @@ This folder contains concise, generic agent and skill instructions for this mobi
 
 ## Available Guidance
 
-- `agents/generic-test-builder.md`: task agent for test authoring and updates.
-- `skills/generic-test-builder/SKILL.md`: implementation recipe.
-- `skills/generic-pattern/SKILL.md`: architecture and flow reference.
-- `skills/generic-code-review/SKILL.md`: review checklist.
+- `agents/mobile-test-builder.md`: task agent for test authoring and updates.
+- `skills/mobile-test-builder/SKILL.md`: implementation recipe.
+- `skills/mobile-pattern/SKILL.md`: architecture and flow reference.
+- `skills/mobile-code-review/SKILL.md`: review checklist.
 
 ## Strict Rules (Always Active)
 
