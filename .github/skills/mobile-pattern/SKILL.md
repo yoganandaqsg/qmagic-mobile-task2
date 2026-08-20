@@ -31,9 +31,11 @@ Never bypass this order by inventing selectors in steps or hardcoding platform b
 ## Authoring Pattern
 
 1. Keep locators and page actions in `src/test/pages/**`.
-2. Keep steps thin in `src/test/steps/**`.
-3. Keep behavior definitions in `src/test/features/**`.
-4. Keep reusable interactions in `src/utils/mobileUtils/actions/uiActions.ts`.
+2. Keep page object members in strict AAA order: Locators first, then Actions, then Asserts.
+3. Make each page object class extend `uiActions` from `src/utils/mobileUtils/actions/uiActions.ts`.
+4. Keep steps thin in `src/test/steps/**`.
+5. Keep behavior definitions in `src/test/features/**`.
+6. Keep reusable interactions in `src/utils/mobileUtils/actions/uiActions.ts`.
 
 ## Current Shared Actions
 
@@ -45,6 +47,8 @@ Never bypass this order by inventing selectors in steps or hardcoding platform b
 ## Conventions
 
 - Do not inline selectors in step files.
+- Page objects should inherit from `uiActions` instead of composing it as a separate member.
+- Use one page object per app screen. Do not combine multiple screens into a single page object.
 - Do not add hard sleeps.
 - Keep platform-specific selectors in one place.
 - Prefer small, reusable page methods.

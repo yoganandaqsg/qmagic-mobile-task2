@@ -21,17 +21,19 @@ This repository uses a mobile automation stack:
 3. Appium MCP is the source of truth for selector validation. Use live hierarchy/accessibility inspection before creating or changing locators.
 4. Keep locators in page objects. Do not place selectors in step definitions.
 5. Place all new test artifacts in domain folders (`src/test/features/<domain>/**`, `src/test/steps/<domain>/**`, `src/test/pages/<domain>/**`). Do not use `src/test/**/generic` for domain scenarios.
-6. For multi-screen flows, split page objects by screen/component responsibility. Do not collapse unrelated screens into a single page object.
-7. If no emulator/simulator/device is connected for MCP inspection, stop and return: `Local device is not connected. Connect an Android emulator / iOS simulator or a device, then re-run.`
-8. Keep page objects structured as Arrange -> Act -> Assert.
-9. Keep assertions explicit. Assert methods must validate behavior, not only wait.
-10. Keep step callbacks as `async function () {}` when `this` context is used.
-11. Do not add hard waits (`pause`, fixed sleep). Use shared wait/action methods.
-12. Keep manual Appium session flow intact:
+6. For multi-screen flows, split page objects by screen/component responsibility.
+7. Create one page object per app screen. Do not combine multiple screens into one page object.
+8. If no emulator/simulator/device is connected for MCP inspection, stop and return: `Local device is not connected. Connect an Android emulator / iOS simulator or a device, then re-run.`
+9. Keep page objects structured in strict AAA order: Locators -> Actions -> Asserts.
+10. Page object classes must extend `uiActions` from `src/utils/mobileUtils/actions/uiActions.ts`.
+11. Keep assertions explicit. Assert methods must validate behavior, not only wait.
+12. Keep step callbacks as `async function () {}` when `this` context is used.
+13. Do not add hard waits (`pause`, fixed sleep). Use shared wait/action methods.
+14. Keep manual Appium session flow intact:
     - Session creation: `src/utils/mobileUtils/appium/appiumClient.ts`
     - Hook lifecycle: `src/hooks/hooks.ts`
     - Shared driver fixture: `src/hooks/pageFixture.ts`
-13. Keep changes scoped to this framework structure unless user asks otherwise.
-14. Validate changes with:
+15. Keep changes scoped to this framework structure unless user asks otherwise.
+16. Validate changes with:
     - `npm run typecheck`
     - `npm run test`

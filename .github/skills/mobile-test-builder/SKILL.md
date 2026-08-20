@@ -56,6 +56,8 @@ If no Android emulator, iOS simulator, or device is connected for MCP inspection
 
 - Do not invent missing requirements; ask if unclear.
 - Keep selectors out of step files.
+- Page object classes should extend `uiActions` to consume shared actions directly.
+- Create a separate page object for each app screen. Do not combine multiple screens into one page object.
 - Keep page-object boundaries aligned with UI boundaries: separate menu/navigation pages from destination screen pages.
 - Do not guess selectors from code alone when MCP inspection is possible.
 - Avoid hardcoded waits.
