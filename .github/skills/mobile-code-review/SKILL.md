@@ -1,9 +1,9 @@
 ---
 name: mobile-code-review
-description: Review mobile automation changes for correctness and framework consistency in this generic Cucumber + WebdriverIO + Appium project.
+description: Review mobile automation changes for correctness and framework consistency in this Cucumber + WebdriverIO + Appium project.
 ---
 
-# Generic Code Review
+# Mobile Code Review
 
 Review changes under `src/test/**`, `src/hooks/**`, and `src/utils/mobileUtils/**`.
 

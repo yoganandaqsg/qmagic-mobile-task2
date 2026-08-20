@@ -1,6 +1,6 @@
 # .github Workspace Setup
 
-This folder contains concise, generic agent and skill instructions for this mobile automation workspace.
+This folder contains concise agent and skill instructions for this mobile automation workspace.
 
 ## Available Guidance
 

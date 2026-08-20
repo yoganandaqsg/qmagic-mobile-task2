@@ -1,9 +1,9 @@
 ---
 name: mobile-pattern
-description: Pattern reference for this generic mobile automation framework using Cucumber + WebdriverIO remote() + Appium.
+description: Pattern reference for this mobile automation framework using Cucumber + WebdriverIO remote() + Appium.
 ---
 
-# Generic Pattern
+# Mobile Pattern
 
 Use this as the architecture reference when implementing tests.
 

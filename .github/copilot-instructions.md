@@ -1,15 +1,15 @@
 # Workspace Copilot Instructions
 
-This repository uses a generic mobile automation stack:
+This repository uses a mobile automation stack:
 - Cucumber + TypeScript
 - WebdriverIO `remote()` with Appium
 
-## Read First
+## Required Reading
 
 - `.github/skills/SKILL.md`
 - `.github/skills/mobile-test-builder/SKILL.md`
 
-## Use When Needed
+## Reference Skills
 
 - `.github/skills/mobile-pattern/SKILL.md`
 - `.github/skills/mobile-code-review/SKILL.md`

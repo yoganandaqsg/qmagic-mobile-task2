@@ -1,9 +1,9 @@
 ---
 name: mobile-test-builder
-description: "Add or update mobile UI tests using the generic Cucumber + WebdriverIO remote() + Appium + TypeScript framework in this repo. Trigger phrases: automate android scenario, automate ios scenario, update android/ios scenario, extend android scenario to ios"
+description: "Add or update mobile UI tests using the Cucumber + WebdriverIO remote() + Appium + TypeScript framework in this repo. Trigger phrases: automate android scenario, automate ios scenario, update android/ios scenario, extend android scenario to ios"
 ---
 
-# Generic Test Builder
+# Mobile Test Builder
 
 Use this skill to create or update scenarios in this repo without changing the core runtime flow.
 
@@ -59,7 +59,7 @@ If no Android emulator, iOS simulator, or device is connected for MCP inspection
 - Keep page-object boundaries aligned with UI boundaries: separate menu/navigation pages from destination screen pages.
 - Do not guess selectors from code alone when MCP inspection is possible.
 - Avoid hardcoded waits.
-- Keep naming and wording generic (no product-specific terms).
+- Keep naming and wording neutral (no product-specific terms).
 - Reuse shared action helpers before adding new utility methods.
 - When using world context, use `CustomWorld.state` from `src/test/support/world.ts`.
 
