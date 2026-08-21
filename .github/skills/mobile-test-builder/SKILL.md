@@ -7,6 +7,11 @@ description: "Add or update mobile UI tests using the Cucumber + WebdriverIO rem
 
 Use this skill to create or update scenarios in this repo without changing the core runtime flow.
 
+## Required Reading Order
+
+1. `.github/skills/SKILL.md`
+2. `.github/skills/mobile-test-builder/SKILL.md`
+
 ## Project Structure
 
 - `src/test/features/**`: feature files
@@ -50,7 +55,7 @@ If no Android emulator, iOS simulator, or device is connected for MCP inspection
 4. Add or update step definitions in `src/test/steps/**`.
 5. Add or update feature scenarios in `src/test/features/**`.
 6. Keep `src/hooks/hooks.ts` and `src/utils/mobileUtils/appium/appiumClient.ts` lifecycle logic intact unless user asks.
-7. Run self-review using `.claude/skills/mobile-code-review/SKILL.md` before final verification.
+7. Run self-review using `.github/skills/mobile-code-review/SKILL.md` before final verification.
 
 ## Guardrails
 

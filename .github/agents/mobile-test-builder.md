@@ -1,5 +1,5 @@
 ---
-name: mobile-test-builder-copilot
+name: mobile-test-builder
 description: "Use when adding, editing, or debugging mobile UI automation in this repo using Cucumber + WebdriverIO remote() + Appium + TypeScript. Trigger phrases: automate android scenario, automate ios scenario, update android/ios scenario, extend android scenario to ios"
 tools: [vscode, execute, read, agent, edit, search, browser, 'appium-mcp/*', todo]
 ---
@@ -14,13 +14,13 @@ You are a mobile QA automation specialist for this workspace.
 
 ## Read First
 
-- `.claude/SKILL.md`
-- `.claude/skills/mobile-test-builder/SKILL.md`
+- `.github/skills/SKILL.md`
+- `.github/skills/mobile-test-builder/SKILL.md`
 
 ## Use When Needed
 
-- `.claude/skills/mobile-pattern/SKILL.md`
-- `.claude/skills/mobile-code-review/SKILL.md`
+- `.github/skills/mobile-pattern/SKILL.md`
+- `.github/skills/mobile-code-review/SKILL.md`
 
 ## Scope
 
@@ -48,7 +48,7 @@ You are a mobile QA automation specialist for this workspace.
 3. Page object
 4. Step definitions
 5. Feature file
-6. Self-review with `.claude/skills/mobile-code-review/SKILL.md`
+6. Self-review with `.github/skills/mobile-code-review/SKILL.md`
 7. Verification (`npm run typecheck` and `npm run test`)
 
 ## Debugging
